@@ -9,7 +9,7 @@ class Students:
         self.__build_main_window()
         tkinter.mainloop()
 
-        conn = sqlite3.connect(r'C:\Users\Kirito\Desktop\Programmki\Students_info\student_info.db')
+        conn = sqlite3.connect(r'C:\Users\Kirito\Desktop\Programmki\Students\student_info.db')
         cur = conn.cursor()
         try:
             cur.execute('PRAGMA foreign_keys=ON')
